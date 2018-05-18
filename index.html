@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title> JS Validation </title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="js.css">
+</head>
+<body class="bg-dark">
+  <div class="display-3 text-center mb-3 mt-2 text-white"> Registration Form</div>
+  <br><br>
+  <div class="card mx-auto">
+    <form method="POST">
+      <div class="form-group">
+      <input type="text" placeholder="Enter a username" id="username" class="form-control mb-2 mr-2" min="8"  required>
+    </div>
+
+    <div class="form-group">
+    <input type="email" placeholder="Enter your email address" id="email" class="form-control mb-2 mr-2"   required>
+  </div>
+
+  <div class="form-group">
+  <input type="password" placeholder="Enter a password" id="password" class="form-control mb-2 mr-2" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%]).{8,}" required>
+</div>
+
+<div class="form-group">
+<input type="password" placeholder="Confirm your password" id="password1" class="form-control mb-2 mr-2" onblur="check()"   required>
+</div>
+
+<input type="submit" value="Submit" class="btn btn-success center-block " id="button" onclick="alert("Thanks for submitting your info")"  disabled>
+</form>
+
+
+<div>
+   <script src="jsc.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
