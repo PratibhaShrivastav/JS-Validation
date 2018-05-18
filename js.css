@@ -1,0 +1,10 @@
+.card {
+  width: 30%;
+  background-color: black;
+}
+
+.btn {
+   margin-left: 120px;
+   font-size: 15px;
+   width:50%;
+}
